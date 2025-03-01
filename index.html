@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #7639;
+        }
+        header {
+            background: #333333a1;
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 0px;
+        }
+        /* img {
+            width: 200px;
+            border-radius: 50%; 
+        } */
+        .projects, .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-item, .skill-item {
+            margin: 4px;
+            padding: 10px;
+            border: 1px solid #a43636;
+        }
+        footer {
+            background: #333333a1;
+            
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="font-bold text-3xl">My Portfolio</h1>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2 class="font-bold text-2xl mt-8">About Me</h2>
+            <img class="w-[300px] h-[300px] mt-8 ml-[30%] rounded-full hover:border-4 hover:border-[#a43636] mb-5 " src="Dhrumil Photo.jpg"width="300" height="300" alt="Profile Picture">    
+            <p class="text-lg">Hello! I'm Dhrumil Mokani, a passionate developer.</p>
+        </section>
+        <section id="projects">
+            <h2 class="text-2xl mt-10">Projects</h2>
+            <div class="projects">
+                <div class="project-item hover:bg-yellow-900 hover:text-white cursor-pointer">Invention Of Google AI</div>
+                <div class="project-item hover:bg-yellow-900 hover:text-white cursor-pointer">Was The First To Create BlackBox AI</div>
+                <div class="project-item hover:bg-yellow-900 hover:text-white cursor-pointer">Invented Coding In Higher Languages </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2 class="text-2xl mt-10">Skills</h2>
+            <div class="skills">
+                <div class="skill-item hover:bg-yellow-900 hover:text-white cursor-pointer">HTML</div>
+                <div class="skill-item hover:bg-yellow-900 hover:text-white cursor-pointer">CSS</div>
+                <div class="skill-item hover:bg-yellow-900 hover:text-white cursor-pointer">JavaScript</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="text-2xl mt-10">Contact</h2>
+
+            <a class="text-lg" href="https://mail.google.com/">Email</a>
+            <p class="text-lg"><a href="#">LinkedIn</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Dhrumil Mokani. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Newspaper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #14d1bb;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background:  #14d1bb;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .main {
+            flex: 70%;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 30%;
+            padding: 20px;
+            background:  #14d1bb;
+        }
+        .article {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .sidebar img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        .allow-copy {
+            user-select: text;
+        }
+    </style>
+</head>
+<body class="allow-copy">
+    <div class="container allow-copy">
+        <div class="header">
+            <h1>Online Lafda</h1>
+            <p>Your Untrusted Source For News</p>
+        </div>
+        <div class="row">
+            <div class="main">
+                <div class="article">
+                    <h2>Breaking News: Major Event Unfolds</h2>
+                    <p><strong>By Rajat Dalal </strong> | February 27, 2025</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6blc6FiB7nYaof26p4Q_DLJh9iy0xH-T-09MTXaoHn6kjd88Ux36_5gLTcVtI_e7kYk&usqp=CAU">
+                    
+                    <p>Six Mahine Rukja Meri Body Banne Vali Hai</p>
+                </div>
+                <div class="article">
+                    <h2>Celebrity Spot</h2>
+                    <p><strong>By Deepak Kalal</strong> | February 27, 2025</p>
+                    <img src="data:image/jpeg;base64,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" alt="Celebrity Spot">
+                    <p>Shah Rukh Khan Pakda Gaya GolGappe Khaate Hue</p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <h3>Latest Headlines</h3>
+                <img src="headlines.jpg" alt="Latest Headlines">
+                <ul>
+                    <li><a href="#">Dhrumil Bhaii Bana Super Cop</a></li>
+                    <li><a href="#">Rohan Kolwale Ne Ki Gunda Gardi</a></li>
+                    <li><a href="#">Azad Bhawan Ke Jaane Maane 2 Bacche Hue Farar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Daily Times. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
